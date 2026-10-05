@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox()">
+    <img id="lightboxImg" src="" alt="Enlarged image">
+  </div>
+
+  <header>
+    <div class="logo">
+      Portfolio
+    </div>
+    <nav class="nav" id="mainNav">
+      <a class="nav-btn active" data-section="home" href="#home">Home</a>
+      <a class="nav-btn" data-section="quiz" href="#quiz">Quiz</a>
+      <a class="nav-btn" data-section="laboratory" href="#laboratory">Laboratory</a>
+      <a class="nav-btn" data-section="exam" href="#exam">Exam</a>
+      <span class="nav-indicator" id="navIndicator"></span>
+    </nav>
+  </header>
+
+  <div class="content">
+
+    <section id="home" class="section">
+      <div class="portfolio">
+        <div class="container">
+          <div class="left">
+            <div class="home-image-frame">
+              <img src="ako to.jpg" alt="Dhon Zedrec P. Patricio">
+            </div>
+          </div>
+          <div class="right">
+            <div class="profile-info">
+              <p class="profile-greeting">Hi, I'm</p>
+              <h2 class="profile-name">
+                Dhon Zedrec P.
+                <span class="surname">Patricio</span>
+              </h2>
+              <p class="profile-course">
+                <span class="course-badge">BSIT - 3B</span>
+              </p>
+              <p class="profile-bio">
+                I am 20 years old, currently studying at Philippine Christian University and taking an Information Technology also a 3rd Year now. I love playing games and sports. I have 2 cats. I consistently doing some editing videos to gain my knowledge and at the same time studying hard to be able achieve my goals in my future.
+              </p>
+              <div class="profile-tags">
+                <span class="tag">🎮 Gaming</span>
+                <span class="tag">⚽ Sports</span>
+                <span class="tag">🐱 Cat Lover</span>
+                <span class="tag">🎬 Video Editing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section">
+      <h1><span class="title-bar"></span>Quiz</h1>
+      <div id="quizBlocks">
+
+        <div class="portfolio laboratory-block quiz-block reveal">
+          <div class="card-simple">
+            <div class="image-frame">
+              <img src="quiz1.png" alt="Quiz 1">
+            </div>
+            <p class="static-caption">Quiz 1</p>
+          </div>
+        </div>
+
+        <div class="portfolio laboratory-block quiz-block reveal">
+          <div class="card-simple">
+            <div class="image-frame">
+              <img src="quiz2.png" alt="Quiz 2">
+            </div>
+            <p class="static-caption">Quiz 2</p>
+          </div>
+        </div>
+
+        <div class="portfolio laboratory-block quiz-block reveal">
+          <div class="card-simple">
+            <div class="image-frame">
+              <img src="quiz3.png" alt="Quiz 3">
+            </div>
+            <p class="static-caption">Quiz 3</p>
+          </div>
+        </div>
+
+        <div class="portfolio laboratory-block quiz-block reveal">
+          <div class="card-simple">
+            <div class="image-frame">
+              <img src="longquiz.png" alt="Long Quiz">
+            </div>
+            <p class="static-caption">Long Quiz</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="laboratory" class="section">
+      <h1><span class="title-bar"></span>Laboratory</h1>
+      <div id="laboratoryBlocks">
+
+        <div class="portfolio laboratory-block reveal">
+          <div class="card-simple">
+            <div class="image-frame no-border">
+              <embed src="LAB1_PATRICIO_ELECT.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+            <div class="file-preview">
+              <a href="LAB1_PATRICIO_ELECT.pdf" download="LAB1_PATRICIO_ELECT.pdf" target="_blank">📄 LAB1_PATRICIO_ELECT.pdf</a>
+            </div>
+            <p class="static-caption">Laboratory Activity 1</p>
+          </div>
+        </div>
+
+        <div class="portfolio laboratory-block reveal">
+          <div class="card-simple">
+            <div class="image-frame no-border">
+              <embed src="LAB2_PATRICIO_ELECT.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+            <div class="file-preview">
+              <a href="LAB2_PATRICIO_ELECT.pdf" download="LAB2_PATRICIO_ELECT.pdf" target="_blank">📄 LAB2_PATRICIO_ELECT.pdf</a>
+            </div>
+            <p class="static-caption">Laboratory Activity 2</p>
+          </div>
+        </div>
+
+        <div class="portfolio laboratory-block reveal">
+          <div class="card-simple">
+            <div class="image-frame">
+              <img src="midterms.png" alt="Midterms Laboratory 1" width="100%" height="100%">
+            </div>
+            <p class="static-caption">Midterms Laboratory 1</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="exam" class="section">
+      <h1><span class="title-bar"></span>Exam</h1>
+      <div id="examBlocks">
+        <div class="empty-state reveal">
+          <div class="empty-icon">🗒️</div>
+          <p>No exam activities yet.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
